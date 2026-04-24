@@ -1,0 +1,11 @@
+Title: SDN-Based Firewall using POX
+
+This project implements a software-defined networking firewall using the POX controller and Mininet emulator. The system uses rule-based filtering to block traffic based on MAC address, IP address, and port number.
+
+The controller handles PacketIn events and installs flow rules in the Open vSwitch to enforce firewall policies. Blocked packets are dropped using match-action rules.
+
+The system was tested using ping and HTTP requests. Results show that blocked hosts cannot communicate, while allowed hosts function normally.
+
+Flow rules were verified using ovs-ofctl, confirming correct installation.
+
+This project demonstrates the effectiveness of SDN in centralized network security management.
